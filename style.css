@@ -1,0 +1,757 @@
+:root {}
+
+body {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.homepage {
+    width: 100vw;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(12, 205, 166), rgba(25, 102, 146));
+    background-position: center;
+    background-size: contain;
+    z-index: 3;
+}
+
+.bg-color {
+    background: url('Assets/Top Section bg 1 (2).png');
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-brand img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.menu-list {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    top: 0;
+    left: 0px;
+    transition: 1s;
+    z-index: 999;
+}
+
+.menu-list ul {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-list ul li {
+    margin: 20px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    transition: .5s;
+}
+
+.menu-list ul li.active {
+    background-color: blue;
+}
+
+.menu-list ul li.active a {
+    color: #fff;
+}
+
+.menu-list ul li a {
+    color: #fff;
+}
+
+.menu-list ul li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.menu-list .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding-bottom: 80px;
+}
+
+.nav-btn {
+    background-color: #09e5ab;
+    color: #fff;
+}
+
+.head1-btn {
+    background-color: #09e5ab;
+    color: #fff;
+    width: 130px;
+    padding: 5px 10px;
+}
+
+.head2-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 130px;
+    padding: 5px 10px;
+}
+
+.info-section {
+    width: 50%;
+    background: url('Assets/lap 1 (1).png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 380px;
+    margin: 0px auto;
+    position: absolute;
+    display: flex;
+    z-index: 55;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.banner {
+    width: 80%;
+    height: 85%;
+    background: url('Assets/web1.png')no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.banner:before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 320px;
+    background: url('Assets/Doctor.png')no-repeat;
+    right: -40px;
+    background-position: center;
+    background-size: contain;
+    top: 90px;
+    border-radius: 45%;
+    z-index: 4;
+}
+
+.banner:after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    background: url('Assets/Frame 99.png')no-repeat;
+    right: -170px;
+    background-position: center;
+    background-size: contain;
+    top: 80px;
+    z-index: 3;
+    border-radius: 45%;
+}
+
+.Ellipse {
+    position: absolute;
+    bottom: -20%;
+    width: 150px;
+    height: 150px;
+    left: 30%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+/*responsive*/
+@media only screen and (max-width: 600px) {
+    .info-section {
+        width: 80%;
+    }
+
+    .banner:before {
+        width: 111px;
+        height: 227px;
+        right: -31px;
+    }
+
+    .banner:after {
+        width: 300px;
+        height: 194px;
+        right: -158px;
+    }
+
+    header p {
+        padding: 0px 20px;
+    }
+}
+
+.second-page {
+    width: 100vw;
+    height: auto;
+    background-position: center;
+    background-size: contain;
+    z-index: 3;
+    background: url('Assets/Bg-icon1 1.png')#f4f4f4 no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+.second-page .bg-color {
+    background: url('Assets/Bg-icon1 1.png');
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+}
+
+.second-page header {
+    padding-top: 50px;
+    color: #000;
+}
+
+.second-page .car .card {
+    border-radius: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+
+}
+
+.second-page .car .card img {
+    border-radius: 20px;
+}
+
+.Third-page {
+    width: 100vw;
+    height: auto;
+    background: #fff;
+    background-position: center;
+    background-size: contain;
+    z-index: 3;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.Third-page header {
+    padding-top: 50px;
+    color: #000;
+
+}
+
+.Third-page .car .card {
+    border-radius: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+
+}
+
+.Third-page .car .card img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.row-sec {
+    z-index: 10 !important;
+}
+
+.Third-sec:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    left: 70px;
+    height: 100px;
+    background: url('Assets/XMLID_240_.png')no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+}
+
+.Third-sec:after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    right: 90px;
+    bottom: 15px;
+    height: 100px;
+    z-index: -1;
+    background: url('Assets/XMLID_366_ (1).png');
+}
+
+.Fourth-page {
+    width: 100vw;
+    height: auto;
+    background: url('Assets/Bg-icon1 1.png')#f4f4f4 no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 3;
+    padding-bottom: 20px;
+}
+
+.Fourth-page header {
+    padding-top: 50px;
+    color: #000;
+
+}
+
+.Fourth-page .car .card {
+    border-radius: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+
+}
+
+.Fourth-page .car .card img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.Fourth-page .car button {
+    padding: 0px 10px;
+    width: 100px;
+    text-align: center;
+    font-size: 9px;
+    height: 25px;
+    color: #fff;
+}
+
+.Fourth-page .car p {
+    font-size: 18px;
+}
+
+.Fourth-page .car .btn-1 {
+    background: #09E5AB;
+}
+
+.Fourth-page .car .btn-2 {
+    background: #1B5A90;
+
+}
+
+/*responsive*/
+@media only screen and (max-width: 600px) {
+    .btn-inf {
+        justify-content: center;
+    }
+}
+
+.Fifth-page {
+    width: 100vw;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(12, 205, 166), rgba(25, 102, 146));
+    background-position: center;
+    background-size: contain;
+    z-index: 3;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.Fifth-page .bg-color {
+    background: url('Assets/Bg itmes 1 (1).png');
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+}
+
+.Fifth-page .bg-color header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.img-group {
+    position: absolute;
+    height: 295px;
+    width: 520px;
+    top: 35px;
+    z-index: -3 !important;
+    right: 30px;
+    background-position: center;
+    background-size: contain;
+}
+
+.Fifth-page .z-section {
+    z-index: 4 !important;
+}
+
+.Fifth-page .car img {
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.Fifth-page .z-section p {
+    color: #fff;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Fifth-page .z-section {
+        margin-top: 44px;
+    }
+
+    .Fifth-page .img-group {
+        height: 278px;
+        width: 356px;
+        top: 127px;
+        right: 35px;
+    }
+}
+
+.Sixth-page {
+    width: 100vw;
+    height: auto;
+    background: #fff;
+    background-position: center;
+    background-size: contain;
+    z-index: 3;
+    padding-bottom: 20px;
+}
+
+.Sixth-page header {
+    padding-top: 50px;
+    color: #000;
+
+}
+
+.Sixth-page .car {
+    border-radius: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.Sixth-page .car img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    background-position: center;
+    background-size: contain;
+}
+
+.Sixth-page .car .img-1,
+.Sixth-page .car .img-2 {
+    position: relative;
+}
+
+.Sixth-page .car .img-1::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    top: -5%;
+    left: 30%;
+    height: 200px;
+    background: url("Assets/Frame 97.png")no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.Sixth-page .car .img-2::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    bottom: 0%;
+    right: 5%;
+    height: 200px;
+    background: url("Assets/Frame 96 (1).png")no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.Seventh-page {
+    width: 100vw;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(12, 205, 166), rgba(25, 102, 146));
+    background-position: center;
+    background-size: contain;
+    z-index: 3;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.Seventh-page .bg-color {
+    background: url('Assets/Bg itmes 1 (1).png');
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+}
+
+.Seventh-page .bg-color header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.img-group {
+    position: absolute;
+    height: 295px;
+    width: 520px;
+    top: 35px;
+    z-index: -3 !important;
+    right: 30px;
+    cursor: pointer;
+    background-position: center;
+    background-size: contain;
+}
+
+.Seventh-page .z-section {
+    z-index: 4 !important;
+}
+
+.Seventh-page .z-section p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.Seventh-page .car img {
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .Seventh-page .img-group {
+        height: 278px;
+        width: 356px;
+        top: 127px;
+        right: 35px;
+    }
+}
+
+.navbarSupportedContent {
+    background-color: #0dc6a4;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.form-section {
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(to right, rgba(12, 205, 166), rgba(25, 102, 146));
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-section .bg-color {
+    background: url('Assets/Bg itmes 2.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.form-section {
+    position: relative;
+}
+
+.form-list {
+
+    background-color: #15558d;
+    width: 100%;
+    padding: 5px 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.form-list ul {
+    list-style: none;
+    color: #fff;
+}
+
+.form-page {
+    width: 80%;
+    height: 100%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f4f4f4;
+    position: relative;
+    box-shadow: 0px 5px 5px #000;
+    position: absolute;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.form-page img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.navbarSupportedContent2 {
+    color: #fff;
+    width: 83%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navbarSupportedContent2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    background: url('Assets/Bg.png')no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 250px;
+    position: relative;
+}
+
+.footer-list {
+    padding-top: 100px;
+}
+
+.footer-list .car {
+    margin: 10px 0px;
+}
+
+.footer-list .car button {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 250px;
+    cursor: pointer;
+    outline: none;
+    background-color: #dbfffd;
+    border: none;
+}
+
+.footer-list .car h5 {
+    color: #fff;
+}
+
+.footer-list .car button img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+}
+
+.footer-list .car button .card1 {
+    width: 55%;
+}
+
+.footer-list .car.card1 button i {
+    margin-right: 10px;
+}
+
+.head-sec {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    background-color: #1b5a90;
+    top: 0;
+    left: 50%;
+    padding: 20px 0px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.btn-sec button i {
+    margin-right: 10px;
+    color: #000;
+}
+
+#navbarSupportedContent button {
+    margin: 0px 20px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+}
+
+#navbarSupportedContent button i {
+    color: #fff;
+}
+
+.hide-icon {
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.hide-icon ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.hide-icon ul button {
+    margin: 0px 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-list .car {
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        height: 920px;
+    }
+
+    footer .head-sec {
+        padding: 10px;
+    }
+
+    footer .head-sec h2 {
+        font-size: 1rem;
+    }
+
+    footer .head-sec p {
+        font-size: .8rem;
+    }
+
+    .hide-icon {
+        display: flex;
+    }
+}
